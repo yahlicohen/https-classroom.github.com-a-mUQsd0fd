@@ -1,0 +1,17 @@
+public class Assignment01Q02 {
+    public static void main(String[] input) {
+    	int x = Integer.parseInt(input[0]);
+    	int y = 1;
+    	double res = 0;
+    	for (int i = 0; i < x; i++) {
+    		if (i%2 ==0 ) {
+    			res += (double) 1/y;
+    		}
+    		else {
+    			res -= (double) 1/y;
+    		}
+    		y += 2;
+    	}
+    	System.out.println("result:" + 4*res + ", Math.Pi:" + Math.PI);	
+    }
+}
